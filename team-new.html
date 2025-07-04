@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Our Team - Prepixo</title>
+    <!-- Common Head Content -->
+    <div id="head-container"></div>
+</head>
+
+<body>
+    <!-- Spinner Container -->
+    <div id="spinner-container"></div>
+
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Page Header Container -->
+    <div id="page-header-container"></div>
+
+    <!-- Team Section Container -->
+    <div id="team-container"></div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts Container -->
+    <div id="scripts-container"></div>
+
+    <!-- Component Loader -->
+    <script src="js/components.js"></script>
+
+    <!-- Page-specific initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Load page header
+            await window.componentLoader.loadPageHeader('Our Team', 'Team', [
+                { name: 'Home', url: 'index.html', active: false },
+                { name: 'Pages', url: '#', active: false },
+                { name: 'Team', url: '#', active: true }
+            ]);
+            
+            // Load team section
+            await window.componentLoader.loadComponent('team', '#team-container');
+        });
+    </script>
+
+    <!-- Tawk Container -->
+    <div id="tawk-container"></div>
+
+</body>
+
+</html>

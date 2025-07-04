@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Website with Live Server",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://127.0.0.1:5500/index.html",
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "Start Live Server"
+        },
+        {
+            "name": "Launch Chrome - Static Files",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Team Page",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}/team.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Team Page (Static Components)",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}/team-static.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch About Page",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${workspaceFolder}/about.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

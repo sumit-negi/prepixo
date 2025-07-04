@@ -54,7 +54,8 @@
     });
     
     
-    // Back to top button
+    // Back to top button - COMMENTED OUT (not required)
+    /*
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -66,6 +67,7 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+    */
 
 
     // Header carousel

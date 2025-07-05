@@ -107,5 +107,29 @@
         }
     });
     
+    
+    // Footer component loader
+    function loadFooter() {
+        const footerPlaceholder = document.getElementById('footer-placeholder');
+        if (footerPlaceholder) {
+            fetch('components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    footerPlaceholder.innerHTML = data;
+                    // Set current year after footer loads
+                    const yearElement = document.getElementById('currentYear');
+                    if (yearElement) {
+                        yearElement.textContent = new Date().getFullYear();
+                    }
+                })
+                .catch(error => console.log('Footer loading failed:', error));
+        }
+    }
+    
+    // Load footer when DOM is ready
+    $(document).ready(function() {
+        loadFooter();
+    });
+    
 })(jQuery);
 

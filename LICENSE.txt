@@ -1,35 +1,38 @@
  
 
- => FREE HTML TEMPLATE LICENSE BY HTML Codex
+ => PREPIXO WEBSITE LICENSE
 
- All free HTML templates by HTML Codex are licensed under a Creative Commons Attribution 4.0 International License which means you are not allowed to remove the author’s credit link/attribution link/backlink.
+This website and its contents are the property of Prepixo.
 
- When you download or use our free HTML templates, it will attribute the following conditions.
+Â© 2025 Prepixo. All rights reserved.
 
+=> USAGE TERMS
 
- => YOU ARE ALLOWED
+This website contains proprietary content including but not limited to:
+- Course materials and curricula
+- Training outlines and methodologies
+- Brand assets and logos
+- Website design and code implementations
 
-      1. You are allowed to use for your personal and commercial purposes.
+=> YOU ARE ALLOWED
 
-      2. You are allowed to modify/customize however you like.
+1. View and access the website for educational and informational purposes.
+2. Contact us for course enrollment and training services.
+3. Share links to our website and courses.
+4. Reference our publicly available information with proper attribution.
 
-      3. You are allowed to convert/port for use for any CMS.
+=> YOU ARE NOT ALLOWED
 
-      4. You are allowed to share/distribute under the HTML Codex brand name.
+1. Copy, reproduce, or distribute our course materials without permission.
+2. Use our brand name, logo, or trademarks without authorization.
+3. Reverse engineer or copy our website design and functionality.
+4. Use our content for commercial purposes without written consent.
+5. Create derivative works based on our proprietary materials.
 
-      5. You are allowed to put a screenshot or a link on your blog posts or any other websites.
+=> CONTACT
 
+For licensing inquiries, permissions, or questions about usage rights:
+Email: info@prepixo.com
+Website: https://prepixo.com
 
- => YOU ARE NOT ALLOWED
-
-      1. You are not allowed to remove the author’s credit link/attribution link/backlink without purchasing Credit Removal License ( https://htmlcodex.com/credit-removal ).
-
-      2. You are not allowed to sell, resale, rent, lease, license, or sub-license.
-
-      3. You are not allowed to upload on your template websites or template collection websites or any other third party websites without our permission.
-
- This license can be terminated if you breach any of these conditions.
-
- Please contact us (https://htmlcodex.com/contact) if you have any query.
-
- => PURCHASE CREDIT REMOVAL LICENSE ( https://htmlcodex.com/credit-removal )
+This license is subject to change without notice. Unauthorized use may result in legal action.

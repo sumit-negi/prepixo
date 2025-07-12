@@ -189,10 +189,13 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
 }
 
 .page-header-inner {
@@ -424,3 +427,55 @@
     padding-right: 0;
     border-right: none;
 }
+
+/* Page-specific header backgrounds */
+.page-header.about-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center center/cover no-repeat !important;
+}
+
+.page-header.courses-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173') center center/cover no-repeat !important;
+}
+
+.page-header.course-detail-header {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center center/cover no-repeat !important;
+}
+
+.page-header.contact-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d') center center/cover no-repeat !important;
+}
+
+.page-header.team-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c') center center/cover no-repeat !important;
+}
+
+.page-header.testimonial-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998') center center/cover no-repeat !important;
+}
+
+.page-header.error-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96') center center/cover no-repeat !important;
+}
+
+/* Course-specific headers */
+.page-header.python-header {
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935') center center/cover no-repeat !important;
+}
+
+.page-header.data-science-header {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71') center center/cover no-repeat !important;
+}
+
+.page-header.web-dev-header {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6') center center/cover no-repeat !important;
+}
+
+.page-header.ml-header {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), url('https://images.unsplash.com/photo-1555949963-aa79dcee981c') center center/cover no-repeat !important;
+}
+
+.page-header.java-header {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0') center center/cover no-repeat !important;
+}
+
+/* Fallback for any page header */

@@ -537,7 +537,19 @@
                 </div>
                 <!-- Course 14 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="2.7s">
-                    <div class="course-item bg-light">
+                    <div class="course-item bg-light position-relative">
+                        <!-- Limited Time Offer Badge -->
+                        <div class="position-absolute top-0 start-0 m-3" style="z-index: 10;">
+                            <span class="badge bg-danger text-white px-3 py-2 rounded-pill fw-bold shadow-lg" style="font-size: 0.9rem; animation: pulse 2s infinite;">
+                                <i class="fa fa-fire me-1"></i>LIMITED TIME OFFER!
+                            </span>
+                        </div>
+                        <!-- Price Drop Badge -->
+                        <div class="position-absolute top-0 end-0 m-3" style="z-index: 10;">
+                            <span class="badge bg-success text-white px-2 py-1 rounded fw-bold" style="font-size: 0.8rem;">
+                                85% OFF
+                            </span>
+                        </div>
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Analytics">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
@@ -546,7 +558,11 @@
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">₹15,000</h3>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through fs-6">₹99,000</span>
+                                <span class="text-success fw-bold ms-2" style="font-size: 0.9rem;">You Save ₹84,000!</span>
+                            </div>
+                            <h3 class="mb-0 text-primary fw-bold">₹15,000</h3>
                             <div class="mb-3">
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
@@ -651,7 +667,19 @@
                 <h1 class="mb-5">What Our Students Love!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="course-item bg-light">
+                <div class="course-item bg-light position-relative">
+                    <!-- Limited Time Offer Badge -->
+                    <div class="position-absolute top-0 start-0 m-3" style="z-index: 10;">
+                        <span class="badge bg-danger text-white px-3 py-2 rounded-pill fw-bold shadow-lg" style="font-size: 0.9rem; animation: pulse 2s infinite;">
+                            <i class="fa fa-fire me-1"></i>LIMITED TIME!
+                        </span>
+                    </div>
+                    <!-- Price Drop Badge -->
+                    <div class="position-absolute top-0 end-0 m-3" style="z-index: 10;">
+                        <span class="badge bg-success text-white px-2 py-1 rounded fw-bold" style="font-size: 0.8rem;">
+                            85% OFF
+                        </span>
+                    </div>
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Analytics">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
@@ -660,7 +688,11 @@
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">₹15,000</h3>
+                        <div class="mb-2">
+                            <span class="text-muted text-decoration-line-through fs-6">₹99,000</span>
+                            <span class="text-success fw-bold ms-2" style="font-size: 0.9rem;">Save ₹84,000!</span>
+                        </div>
+                        <h3 class="mb-0 text-primary fw-bold">₹15,000</h3>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -870,6 +902,59 @@
             .course-inquiry-btn:hover::after {
                 left: 100%;
             }
+
+        /* Limited Time Offer Badge Animation */
+        .badge.bg-danger {
+            animation: badgePulse 2s infinite;
+            box-shadow: 0 0 20px rgba(220, 53, 69, 0.3);
+        }
+
+        @keyframes badgePulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(220, 53, 69, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 25px rgba(220, 53, 69, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(220, 53, 69, 0.3);
+            }
+        }
+
+        /* Promotional Badge Hover Effects */
+        .course-item:hover .badge.bg-danger {
+            animation: badgePulse 1s infinite;
+            transform: scale(1.05);
+        }
+
+        .course-item:hover .badge.bg-success {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Strikethrough Price Animation */
+        .text-decoration-line-through {
+            position: relative;
+        }
+
+        /* Urgency Message Glow */
+        .alert-warning {
+            border: 2px solid #ffc107;
+            background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px rgba(255, 193, 7, 0.3);
+            }
+            to {
+                box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+            }
+        }
     </style>
 
     <!-- Footer Start -->

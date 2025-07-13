@@ -29,6 +29,57 @@
 
     <!-- Template Stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Promotional Badge Animations -->
+    <style>
+        /* Limited Time Offer Badge Animation */
+        .badge.bg-danger {
+            animation: badgePulse 2s infinite;
+            box-shadow: 0 0 20px rgba(220, 53, 69, 0.3);
+        }
+
+        @keyframes badgePulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(220, 53, 69, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 25px rgba(220, 53, 69, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(220, 53, 69, 0.3);
+            }
+        }
+
+        /* Promotional Badge Hover Effects */
+        .course-item:hover .badge.bg-danger {
+            animation: badgePulse 1s infinite;
+            transform: scale(1.05);
+        }
+
+        .course-item:hover .badge.bg-success {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Urgency Message Glow */
+        .alert-warning {
+            border: 2px solid #ffc107;
+            background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px rgba(255, 193, 7, 0.3);
+            }
+            to {
+                box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -246,95 +297,129 @@
 
 
     <!-- Courses Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
                 <h1 class="mb-5">Popular Courses</h1>
             </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="assets/images/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="courses.html#live-class" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="courses.html#live-class" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Analytics">
+                        <!-- Promotional Badges -->
+                        <div class="position-absolute top-0 start-0 m-2">
+                            <span class="badge bg-danger me-1">🔥 LIMITED TIME</span>
+                            <span class="badge bg-success">💰 85% OFF</span>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">₹10,000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Data Engineering Interview Preparation</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Instructor</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>Self-paced</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="course-data-analytics-bootcamp.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="contact.html" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="assets/images/course-2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="courses.html#live-class" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="courses.html#live-class" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">₹15,000 <small class="text-muted text-decoration-line-through">₹99,000</small></h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(175)</small>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">₹10,000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">.Net Azure Software Developer Interview Preparation</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Instructor</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>Self-paced</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
+                        <h5 class="mb-3">Gen-AI Data Analytics<br>Bootcamp</h5>
+                        <p class="text-muted small mb-0">Revolutionary Gen-AI powered bootcamp - no coding required! Job-focused training with Power BI, Excel AI tools, and visual SQL. Placement assistance included.</p>
+                        <!-- Urgency Message -->
+                        <div class="alert alert-warning p-2 mt-2 mb-0" style="font-size: 12px;">
+                            <i class="fa fa-clock text-warning me-1"></i>
+                            <strong>Hurry!</strong> Only 3 days left at this price!
                         </div>
                     </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Live Instructor</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>3 Months</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="assets/images/course-3.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="courses.html#live-class" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="courses.html#live-class" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI & Deep Learning">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="course-ai-deep-learning.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
                         </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">₹10,000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Data Analytics Interview Preparation</h5>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">₹90,000</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(130)</small>
                         </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Instructor</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>Self-paced</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
+                        <h5 class="mb-3">Artificial Intelligence Deep<br>Learning</h5>
+                        <p class="text-muted small mb-0">Advanced AI and deep learning course covering neural networks, computer vision, and NLP. Build intelligent applications using cutting-edge AI technologies.</p>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Live Instructor</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>10 Months</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
+                    </div>
+                </div>
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=300&fit=crop" alt="Web Development">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="course-web-development.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
                         </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">₹55,000</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(160)</small>
+                        </div>
+                        <h5 class="mb-3">Modern Web Development<br>Mastery</h5>
+                        <p class="text-muted small mb-0">Learn HTML5, CSS3, JavaScript, React, and Node.js. Build responsive websites and full-stack applications with modern development practices.</p>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Live Instructor</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>7 Months</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
+                    </div>
+                </div>
+                <div class="course-item bg-light">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop" alt="Python Programming">
+                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            <a href="course-python-programming.html" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 pb-0">
+                        <h3 class="mb-0">₹50,000</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small>(200)</small>
+                        </div>
+                        <h5 class="mb-3">Complete Python Programming<br>Bootcamp</h5>
+                        <p class="text-muted small mb-0">Master Python from basics to advanced concepts. Build real-world projects, learn data structures, algorithms, and frameworks like Django & Flask.</p>
+                    </div>
+                    <div class="d-flex border-top">
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Live Instructor</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>6 Months</small>
+                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Open</small>
                     </div>
                 </div>
             </div>

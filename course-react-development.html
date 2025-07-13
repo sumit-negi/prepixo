@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>React Development Masterclass - Build Modern Web Applications - Prepixo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="react, javascript, web development, frontend, redux, hooks, components, prepixo" name="keywords">
+    <meta content="Master React development and build modern web applications. Learn components, hooks, state management, and popular libraries in this comprehensive course." name="description">
+
+    <!-- Favicon -->
+    <link href="assets/images/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/vendor/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="assets/images/logo.png" alt="Prepixo" style="height: 65px;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Enroll Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-3 mb-5 page-header course-detail-header">
+        <div class="container py-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">React Development Masterclass</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="courses.html">Courses</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">React Development</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Course Detail Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="course-detail">
+                        <div class="position-relative overflow-hidden mb-4">
+                            <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop" alt="React Development">
+                            <div class="position-absolute top-0 start-0 bg-primary text-white px-3 py-2 m-3 rounded">
+                                <i class="fab fa-react me-2"></i>Modern Frontend • Industry Standard
+                            </div>
+                        </div>
+                        
+                        <h2 class="mb-4">React Development Masterclass - Build Modern Web Applications</h2>
+                        <p class="mb-4">Master React, the most popular JavaScript library for building user interfaces. This comprehensive course covers everything from React fundamentals to advanced concepts like state management, hooks, and performance optimization. Build real-world projects and become job-ready for frontend developer positions.</p>
+                        
+                        <div class="alert alert-info mb-4">
+                            <h5><i class="fab fa-react me-2"></i>Modern React • Component-Based • Industry Standard</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="mb-0">
+                                        <li><strong>Duration:</strong> 4 Months Intensive Training</li>
+                                        <li><strong>Price:</strong> <span class="text-decoration-line-through text-muted">₹75,000</span> <span class="text-success fw-bold">₹45,000</span> <span class="badge bg-success ms-2">40% OFF</span></li>
+                                        <li><strong>Format:</strong> Live Interactive Classes</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="mb-0">
+                                        <li><strong>Job Support:</strong> Portfolio + Placement assistance</li>
+                                        <li><strong>Projects:</strong> 5+ Real-world applications</li>
+                                        <li><strong>Level:</strong> Beginner to Advanced</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="mb-3">What You'll Master</h3>
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <i class="fab fa-react text-primary me-3 mt-1 fs-4"></i>
+                                    <div>
+                                        <h5>React Fundamentals</h5>
+                                        <p>Components, JSX, Props, State, and lifecycle methods. Build your foundation with solid React concepts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <i class="fa fa-cogs text-primary me-3 mt-1 fs-4"></i>
+                                    <div>
+                                        <h5>Modern React Hooks</h5>
+                                        <p>useState, useEffect, useContext, and custom hooks. Master the modern way to write React applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <i class="fa fa-database text-primary me-3 mt-1 fs-4"></i>
+                                    <div>
+                                        <h5>State Management</h5>
+                                        <p>Redux, Context API, and Zustand. Learn to manage complex application state effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <i class="fa fa-rocket text-primary me-3 mt-1 fs-4"></i>
+                                    <div>
+                                        <h5>Advanced Concepts</h5>
+                                        <p>Performance optimization, testing, deployment, and best practices for scalable applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mb-3">Course Curriculum</h3>
+                        <div class="accordion" id="courseCurriculum">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="module1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                        <i class="fab fa-react text-primary me-3"></i>Module 1: React Fundamentals (Weeks 1-4)
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#courseCurriculum">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>JavaScript ES6+ essentials for React</li>
+                                            <li>React setup and development environment</li>
+                                            <li>Components and JSX syntax</li>
+                                            <li>Props and component communication</li>
+                                            <li>State management with useState</li>
+                                            <li>Event handling and forms</li>
+                                            <li>Conditional rendering and lists</li>
+                                            <li><strong>Project:</strong> Build a task management app</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="module2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                        <i class="fa fa-cogs text-primary me-3"></i>Module 2: Advanced React & Hooks (Weeks 5-8)
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#courseCurriculum">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>useEffect hook and side effects</li>
+                                            <li>useContext for state sharing</li>
+                                            <li>useReducer for complex state</li>
+                                            <li>Custom hooks development</li>
+                                            <li>React Router for navigation</li>
+                                            <li>HTTP requests and API integration</li>
+                                            <li>Error boundaries and debugging</li>
+                                            <li><strong>Project:</strong> E-commerce product catalog</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="module3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                        <i class="fa fa-database text-primary me-3"></i>Module 3: State Management & Testing (Weeks 9-12)
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#courseCurriculum">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Redux fundamentals and setup</li>
+                                            <li>Redux Toolkit for modern Redux</li>
+                                            <li>Async actions with Redux Thunk</li>
+                                            <li>React Testing Library</li>
+                                            <li>Unit and integration testing</li>
+                                            <li>Performance optimization techniques</li>
+                                            <li>Code splitting and lazy loading</li>
+                                            <li><strong>Project:</strong> Social media dashboard</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="module4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                        <i class="fa fa-rocket text-primary me-3"></i>Module 4: Production & Deployment (Weeks 13-16)
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#courseCurriculum">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Build optimization and bundling</li>
+                                            <li>Deployment strategies and platforms</li>
+                                            <li>CI/CD with GitHub Actions</li>
+                                            <li>TypeScript with React</li>
+                                            <li>Next.js framework introduction</li>
+                                            <li>Portfolio development</li>
+                                            <li>Interview preparation and coding challenges</li>
+                                            <li><strong>Capstone Project:</strong> Full-stack React application</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="course-sidebar">
+                        <div class="course-info bg-light p-4 mb-4">
+                            <h4 class="mb-4"><i class="fab fa-react text-primary me-2"></i>Course Information</h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fa fa-money-bill text-primary me-2"></i>Price:</span>
+                                <span>
+                                    <span class="text-muted text-decoration-line-through me-2">₹75,000</span>
+                                    <span class="fw-bold text-success fs-4">₹45,000</span>
+                                    <span class="badge bg-success ms-2">40% OFF</span>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fa fa-clock text-primary me-2"></i>Duration:</span>
+                                <span class="fw-bold">4 Months</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fa fa-users text-primary me-2"></i>Level:</span>
+                                <span>Beginner to Advanced</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span><i class="fa fa-calendar text-primary me-2"></i>Schedule:</span>
+                                <span>Mon-Fri, 8-10 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <span><i class="fa fa-certificate text-primary me-2"></i>Certificate:</span>
+                                <span class="fw-bold text-success">Yes</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-primary w-100 mb-3 btn-lg">
+                                <i class="fab fa-react me-2"></i>Enroll Now - ₹45,000
+                            </a>
+                            <a href="courses.html" class="btn btn-outline-primary w-100">
+                                <i class="fa fa-arrow-left me-2"></i>Back to Courses
+                            </a>
+                        </div>
+
+                        <div class="course-features bg-light p-4 mb-4">
+                            <h5 class="mb-3"><i class="fa fa-star text-warning me-2"></i>Course Features</h5>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa fa-laptop text-primary me-3"></i>
+                                <span>Live Interactive Classes</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa fa-project-diagram text-primary me-3"></i>
+                                <span>5+ Real-world Projects</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa fa-code text-primary me-3"></i>
+                                <span>Modern React Ecosystem</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa fa-briefcase text-primary me-3"></i>
+                                <span>Job Placement Support</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-certificate text-primary me-3"></i>
+                                <span>Industry-Recognized Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course Detail End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">
+                        <img src="assets/images/logo.png" alt="Prepixo" style="height: 65px;">
+                    </h4>
+                    <p class="mb-3">Empowering learners with industry-relevant skills.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social me-2" href="https://twitter.com/prepixo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://facebook.com/prepixo" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://youtube.com/prepixo" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://linkedin.com/company/prepixo" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="courses.html">Our Courses</a>
+                    <a class="btn btn-link" href="team.html">Our Team</a>
+                    <a class="btn btn-link" href="testimonial.html">Testimonials</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Popular Courses</h4>
+                    <a class="btn btn-link" href="course-python-programming.html">Python Programming</a>
+                    <a class="btn btn-link" href="course-data-analytics-bootcamp.html">Data Analytics Bootcamp</a>
+                    <a class="btn btn-link" href="courses.html#powerbi">Power BI</a>
+                    <a class="btn btn-link" href="courses.html#excel">Microsoft Excel</a>
+                    <a class="btn btn-link" href="courses.html#sql">SQL Database</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact Info</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Whitefield, Bangalore, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-8826327302</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@prepixo.com</p>
+                    <p class="mb-2"><i class="fa fa-clock me-3"></i>Mon - Fri: 9AM - 6PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Prepixo</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="courses.html">Courses</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/easing/easing.min.js"></script>
+    <script src="assets/vendor/waypoints/waypoints.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

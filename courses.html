@@ -30,6 +30,94 @@
     <!-- Template Stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet">
     
+    <!-- Scrolling Banner & Quick Action Buttons Styles -->
+    <style>
+        @keyframes sparkleMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .scrolling-text {
+            overflow: hidden;
+            white-space: nowrap;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .scrolling-content {
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem;
+            animation: scroll 20s linear infinite;
+            white-space: nowrap;
+            will-change: transform;
+        }
+        
+        /* Pause animation on hover */
+        .scrolling-text:hover .scrolling-content {
+            animation-play-state: paused;
+        }
+        
+        /* Quick Action Buttons Enhanced Design */
+        .quick-action-btn {
+            position: relative;
+        }
+        
+        .quick-action-btn:hover .btn {
+            transform: scale(1.1) !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+        
+        .quick-action-btn:hover .btn-label {
+            opacity: 1 !important;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 1;
+            }
+            70% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        /* Floating animation for buttons */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .quick-action-btn .btn {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .quick-action-btn:nth-child(2) .btn {
+            animation-delay: 0.5s;
+        }
+        
+        .quick-action-btn:nth-child(3) .btn {
+            animation-delay: 1s;
+        }
+    </style>
+    
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -89,6 +177,58 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Running Notification Banner Start -->
+    <div class="container-fluid bg-danger" style="background: linear-gradient(135deg, #dc3545, #ff6b6b); position: relative; overflow: hidden; padding-top: 0.2rem; padding-bottom: 0.2rem;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 1px, transparent 1px), radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 30px 30px; animation: sparkleMove 15s linear infinite;"></div>
+        <div class="position-relative">
+            <div class="scrolling-text">
+                <div class="scrolling-content">
+                    🔥 MEGA SALE ALERT! 🔥 &nbsp;&nbsp;&nbsp; All Courses 85% OFF! &nbsp;&nbsp;&nbsp; 💰 Learn Any Tech Skill - Data Analytics, Python, Web Development & More! &nbsp;&nbsp;&nbsp; Save ₹84,000 Today! &nbsp;&nbsp;&nbsp; 📞 Call: +91-8826327302 &nbsp;&nbsp;&nbsp; Limited Time Offer! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🔥 MEGA SALE ALERT! 🔥 &nbsp;&nbsp;&nbsp; All Courses 85% OFF! &nbsp;&nbsp;&nbsp; 💰 Learn Any Tech Skill - Data Analytics, Python, Web Development & More! &nbsp;&nbsp;&nbsp; Save ₹84,000 Today! &nbsp;&nbsp;&nbsp; 📞 Call: +91-8826327302 &nbsp;&nbsp;&nbsp; Limited Time Offer! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Action Buttons (Fixed Position) -->
+        <div class="position-fixed" style="top: 50%; right: 20px; transform: translateY(-50%); z-index: 1050;">
+            <div class="d-flex flex-column gap-3">
+                <!-- Call Button -->
+                <div class="quick-action-btn">
+                    <a href="tel:+918826327302" class="btn btn-danger shadow-lg" style="width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff416c, #ff4757); border: 3px solid rgba(255,255,255,0.3); position: relative; overflow: hidden;" title="Call Now - +91-8826327302">
+                        <i class="fa fa-phone" style="font-size: 1.2rem; color: white; z-index: 2;"></i>
+                        <div class="btn-ripple" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background: rgba(255,255,255,0.3); border-radius: 50%; transform: translate(-50%, -50%) scale(0); animation: ripple 2s infinite;"></div>
+                    </a>
+                    <div class="btn-label" style="position: absolute; right: 75px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.8); color: white; padding: 8px 12px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
+                        📞 Call Now
+                    </div>
+                </div>
+                
+                <!-- WhatsApp Button -->
+                <div class="quick-action-btn">
+                    <a href="https://wa.me/918826327302?text=Hi%20Prepixo!%20I'm%20browsing%20your%20courses%20and%20interested%20in%20the%20MEGA%20SALE%20offer.%20Can%20you%20help%20me%20choose%20the%20right%20course?" target="_blank" class="btn btn-success shadow-lg" style="width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #25d366, #128c7e); border: 3px solid rgba(255,255,255,0.3); position: relative; overflow: hidden;" title="Chat on WhatsApp">
+                        <i class="fab fa-whatsapp" style="font-size: 1.3rem; color: white; z-index: 2;"></i>
+                        <div class="btn-ripple" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background: rgba(255,255,255,0.3); border-radius: 50%; transform: translate(-50%, -50%) scale(0); animation: ripple 2.5s infinite 0.5s;"></div>
+                    </a>
+                    <div class="btn-label" style="position: absolute; right: 75px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.8); color: white; padding: 8px 12px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
+                        💬 WhatsApp Chat
+                    </div>
+                </div>
+                
+                <!-- Email Button -->
+                <div class="quick-action-btn">
+                    <a href="mailto:info@prepixo.com?subject=Course%20Selection%20-%20MEGA%20SALE&body=Hi%20Prepixo,%0A%0AI'm%20interested%20in%20your%20courses%20and%20the%20MEGA%20SALE%20offer.%20Please%20help%20me%20choose%20the%20right%20course%20for%20my%20career%20goals.%0A%0AThank%20you!" class="btn btn-primary shadow-lg" style="width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea, #764ba2); border: 3px solid rgba(255,255,255,0.3); position: relative; overflow: hidden;" title="Send Email">
+                        <i class="fa fa-envelope" style="font-size: 1.1rem; color: white; z-index: 2;"></i>
+                        <div class="btn-ripple" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; background: rgba(255,255,255,0.3); border-radius: 50%; transform: translate(-50%, -50%) scale(0); animation: ripple 3s infinite 1s;"></div>
+                    </a>
+                    <div class="btn-label" style="position: absolute; right: 75px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.8); color: white; padding: 8px 12px; border-radius: 20px; font-size: 0.85rem; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; pointer-events: none;">
+                        ✉️ Email Us
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Running Notification Banner End -->
+
     <!-- Header Start -->
     <div class="container-fluid bg-primary py-3 mb-5 page-header courses-header">
         <div class="container py-3">

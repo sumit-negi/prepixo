@@ -122,7 +122,7 @@ This project uses a modern component-based architecture:
 ## 📞 **Contact Information**
 
 - **📍 Location:** Whitefield, Bangalore, IND
-- **📱 Phone:** +91-8826327302  
+- **📱 Phone:** +91-8123963413  
 - **📧 Email:** info@prepixo.com
 - **💬 Live Chat:** Available on website
 
